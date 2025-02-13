@@ -60,6 +60,7 @@ jobs:
       #Envio de imagenes a docker hub
       - name: Push Docker image to Docker Hub
         run: |
-          docker push ${{ secrets.DOCKER_PASSWORD }}/clasespe:client
-          docker push ${{ secrets.DOCKER_PASSWORD }}/clasespe:config
-          docker push ${{ secrets.DOCKER_PASSWORD }}/clasespe:eureka
+          docker push ${{ secrets.DOCKER_USERNAME }}/clasespe:client
+          docker push ${{ secrets.DOCKER_USERNAME }}/clasespe:config
+          docker push ${{ secrets.DOCKER_USERNAME }}/clasespe:eureka
+
